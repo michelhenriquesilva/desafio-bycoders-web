@@ -2,37 +2,71 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.transactions{
+  width: 60%;
+  margin: 0 auto;
+  height: 550px;
+  overflow-x: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.transactions table{
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.transactions-head{
+  background-color: #eee;
+  font-weight: bold;
+  padding: 5px;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.transactions-head tr{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transactions-head th{
+  padding: 8px; 
+}
+
+.transactions-body{  
+}
+
+.transactions-body .transaction-item{
+  background-color: #eee;
+  padding: 12px;
+  text-align: left;
+  float: 1;
+}
+
+.transactions-body .transaction-item:nth-child(even){
+  background-color: #fff;
+}
+
+.transactions-body td{
+  padding: 8px; 
+}
+
+.empty{
+  padding: 25px;
+  text-align: center;
+  color: #aaa;
+  font-size: 21px;
+}
+
+.button-fab{
+  border-radius: 100px;
+  padding: 12px;
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  right: 150px;
+  bottom: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  vertical-align: middle;
+  line-height: 12px;
+  border: 0;
+  background-color: crimson;
+  cursor: pointer;
 }
