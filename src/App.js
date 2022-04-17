@@ -38,7 +38,7 @@ function App() {
   const getTransactions = async () => {
     try{
       setLoading(true)
-      const data = await TransactionService.get()
+      const data = await TransactionService.findAll()
       setTransactions(data)
     }catch(err){
       console.log(err)

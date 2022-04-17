@@ -11,6 +11,7 @@ Por favor leia atentamente este documento para realizar a configuração adequad
 
 O projeto abaixo é uma aplicação simples que usa as seguintes tecnologias para resolver o problema proposto
 - React Js 
+- axios
 
 # Aplicação
 1. A aplicação, é uma single page simples, com o intuito de apresentar uma lista de transações agrupadas por loja, e permite também realizar o upload do arquivo
