@@ -10,16 +10,11 @@ function App() {
   const [transactions, setTransactions] = useState([])
   const [loading, setLoading] = useState(false)
 
-  const renderItem = useCallback(( { id, type, date, time, card, document, shop, shop_owner, amount} ) => {
+  const renderItem = useCallback(( { shop, total} ) => {
     return(
       <tr className='transaction-item'>
-        <td>{date} {time}</td>
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{document}</td>
-        <td>{card}</td>
-        <td>{shop_owner}</td>
         <td>{shop}</td>
+        <td>R$ {total}</td>
       </tr>
     )
   }, [])
@@ -64,13 +59,8 @@ function App() {
           <table border="0" cellPadding={0} cellSpacing={0}>
             <thead className='transactions-head'>
               <tr>
-                <th>Data/Hora</th>
-                <th>Valor</th>
-                <th>Tipo</th>
-                <th>CPF</th>
-                <th>Nº Cartão</th>
-                <th>Nome do proprietário</th>
                 <th>Nome da loja</th>
+                <th>Total</th>
               </tr>
             </thead>
             <tbody className='transactions-body'>
